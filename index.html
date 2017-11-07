@@ -1,0 +1,751 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>悦店h5</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+body{font-size:10px}
+.qmg_leaf_div{width:500px;height:200px;overflow:hidden;}
+
+.qmg_leaf_all{width:250px;height:260px;position:absolute;right:0;top:0}
+.qmg_leaf1,.qmg_leaf2,.qmg_leaf3,.qmg_leaf4,.qmg_leaf6,.qmg_leaf7,.qmg_leaf8,.qmg_leaf9,.qmg_leaf10,.qmg_leaf11{opacity: 0;-moz-opacity:0;filter:alpha(opacity=0);position: absolute;z-index:1;}
+.qmg_leaf7{filter:alpha(opacity=100);}
+.qmg_leaf8{filter:alpha(opacity=100);}
+.qmg_leaf9{filter:alpha(opacity=100);}
+.qmg_leaf10{filter:alpha(opacity=100);}
+.qmg_leaf11{filter:alpha(opacity=100);}
+.qmg_leaf1{
+	-webkit-animation:fade 10s linear infinite,drop 10s ease-in infinite;
+}
+	.qmg_leaf1 img{
+	-webkit-animation:turnround 10s ease-in-out infinite;
+	}
+	@-webkit-keyframes fade{
+		0%   { opacity: 0; }
+		1%   { opacity: 1; }
+		80%  { opacity: 1; }
+		100% { opacity: 0; }
+	}
+		@-webkit-keyframes drop{
+			0%   { -webkit-transform: translate(40px, 900px);}
+			100% { -webkit-transform: translate(20px, 2000px);}
+		}
+		@-webkit-keyframes turnround{
+			0%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(50px,0px);}
+			40%  { -webkit-transform:rotateZ(-15deg) rotateX(0deg) translate(-200px,10px);}
+			70%  { -webkit-transform:rotateZ(0deg) rotateX(10deg) translate(-300px,100px);}
+			100%  { -webkit-transform:rotateZ(-10deg) rotateX(20deg) translate(-400px,150px);}
+		}
+
+		
+
+		/*qmg_leaf 2*/
+		.qmg_leaf2{
+			-webkit-animation:fade2 10s linear infinite,drop2 10s ease-in infinite;
+		 }
+		.qmg_leaf2 img{
+			-webkit-animation:turnround2 10s 0.1s ease-in-out infinite;
+		}
+		@-webkit-keyframes fade2{
+			0%   { opacity: 1; }
+			35%   { opacity: 1; }
+			40%  { opacity: 0; }
+			100% { opacity: 0; }
+		}
+		@-webkit-keyframes drop2{
+			0%   { -webkit-transform:translate(55px, 55px);-webkit-transform-origin: 50% 50%;}
+			100% { -webkit-transform: translate(-10px, 1600px);}
+		}
+		@-webkit-keyframes turnround2{
+			0%   { -webkit-transform:rotateX(0deg) rotateY(0deg) translateY(0px);}
+			1%   { -webkit-transform:rotateX(-10deg) rotateY(-10deg) translateY(0px);}
+			40%  { -webkit-transform:rotateX(10deg) rotateY(700deg) translateY(150px);}
+			100%  { -webkit-transform:rotateX(10deg) rotateY(700deg) translateY(150px);}
+		}
+		
+		/*qmg_leaf 3*/
+		.qmg_leaf3{
+			-webkit-transform:rotate(30deg);
+			-webkit-animation:fade3 10s 2s linear infinite,drop3 10s 2s ease-in infinite;
+		 }
+		.qmg_leaf3 img{
+			-webkit-animation:turnround3 10s 2s ease-in-out infinite;
+		}
+		@-webkit-keyframes fade3{
+			0%   { opacity: 0; }
+			10%   { opacity: 1; }
+			10%   { opacity: 1; }
+			80%  { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		@-webkit-keyframes drop3{
+			0%   { -webkit-transform:translate(130px, 20px);}
+			100% { -webkit-transform: translate(-10px, 800px);}
+		}
+		@-webkit-keyframes turnround3{
+			0%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(0px,0px);}
+			50%  { -webkit-transform:rotateZ(90deg) rotateX(0deg) translate(20px,150px);}
+			100%  { -webkit-transform:rotateZ(-10deg) rotateX(0deg) translate(-250px,100px);}
+		}
+		
+		/*qmg_leaf 4*/
+		.qmg_leaf4{
+			-webkit-transform:rotate(30deg);
+			-webkit-animation:fade4 14s 1s linear infinite,drop4 14s 1s ease-in infinite;
+		 }
+		.qmg_leaf4 img{
+			-webkit-animation:turnround4 14s 1s ease-in-out infinite;
+		}
+		@-webkit-keyframes fade4{
+			0%   { opacity: 1; }
+			49%  { opacity: 0; }
+			50%{opacity: 0; }
+			51%  { opacity: 0; }
+			52%  { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		@-webkit-keyframes drop4{
+			0%   {-webkit-transform: translate(40px, -20px);}
+			49%  {-webkit-transform: translate(-300px, 750px);}
+			50%  {-webkit-transform: translate(-180px, -20px);}
+			51%  {-webkit-transform: translate(-180px, -20px);}
+			52%  {-webkit-transform: translate(-180px, -20px);}
+			100% {-webkit-transform: translate(-300px, 950px);}
+		}
+		@-webkit-keyframes turnround4{
+			0%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(0px,0px);}
+			25%  { -webkit-transform:rotateZ(90deg) rotateX(0deg) translate(50px,150px);}
+			49%  { -webkit-transform:rotateZ(-10deg) rotateX(0deg) translate(-200px,0px);}
+			50%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(0px,0px);}
+			51%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(0px,0px);}
+			52%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(0px,0px);}
+			75%  { -webkit-transform:rotateZ(90deg) rotateX(0deg) translate(50px,150px);}
+			100%  { -webkit-transform:rotateZ(-10deg) rotateX(0deg) translate(-200px,0px);}
+		}
+		
+		/*qmg_leaf 6*/
+		.qmg_leaf6{
+			z-index:300;
+			-webkit-animation:fade6 12s 3s linear infinite,drop6 12s 3s ease-in infinite;
+		 }
+		.qmg_leaf6 img{
+			-webkit-animation:turnround6 12s 3s ease-in-out infinite;
+		}
+		@-webkit-keyframes fade6{
+			0%   { opacity: 1; }
+			80%  { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		@-webkit-keyframes drop6{
+			0%   { -webkit-transform:translate(-180px, -10px);}
+			100% { -webkit-transform: translate(-240px, 150px);}
+		}
+		@-webkit-keyframes turnround6{
+			0%   { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(50px,0px);}
+			50%  { -webkit-transform:rotateZ(90deg) rotateX(0deg) translate(100px,100px);}
+			100%  { -webkit-transform:rotateZ(0deg) rotateX(0deg) translate(280px,300px);}
+		}
+		
+.section{text-align:center;font:50px "Microsoft Yahei";color:#85675d;width:100%;height:auto;overflow:hidden;position:relative}
+.section1{background:url(images/bg_02.jpg) 50%;background-size:cover}
+.section2{background:#f1e4d8;background-size:cover}
+.section3{background:url(images/bg_04.jpg) 50%;background-size:cover}
+.section4{background:url(images/bg_05.jpg) 50%;background-size:cover}
+.section5{background:url(images/bg_06.jpg) 50%;background-size:cover}
+.section6{background:url(images/bg_07.jpg) 50%;background-size:cover}
+.section7{background:#f3e7db;background-size:cover}
+.section8{background:url(images/bg_09.jpg) 50%;background-size:cover}
+.section1 .word1 img{position:absolute;left:30%;top:10%;animation:word1 3s ease-in;-moz-animation:word1 3s ease-in;-webkit-animation:word1 3s ease-in;}
+@keyframes word1{
+	0%{left:30%;opacity:0}
+	100%{left:30%;opacity:1}	
+}
+@-webkit-keyframes word1{
+	0%{left:30%;opacity:0}
+	100%{left:30%;opacity:1}
+}
+.section1 .word12{position:absolute;left:50%;top:10%;animation:word12 6s ease-in;-moz-animation:word12 6s ease-in;-webkit-animation:word12 6s ease-in}
+@keyframes word12{
+	0%{left:50%;width:0%;opacity:0}
+	100%{left:50%;width:9%;opacity:1}	
+}
+@-webkit-keyframes word12{
+	0%{left:50%;width:0%;opacity:0}
+	100%{left:50%;width:9%;opacity:1}
+}
+.arrow img{position:absolute;left:46%;bottom:4%;animation:arrow 2s infinite;-moz-animation:arrow 2s infinite;-webkit-animation:arrow 2s infinite}
+/*@keyframes arrow{
+	%0{opacity:1}
+	50%{opacity:0.2}
+	100%{opacity:1}	
+}
+@-webkit-keyframes arrow{
+	%0{opacity:1}
+	50%{opacity:0.2}
+	100%{opacity:1}			
+}*/
+.section2 .word2,.section3 .word3{position:absolute;bottom:5%;
+    position: absolute;
+    text-align: center;bottom: 12%;
+    left: 50%;opacity:0}
+
+
+.section2 .word-2,.section3 .word-3{position:absolute;left:50%;bottom:10%;opacity:0}
+.section4 .word41{position:absolute;left:33%;top:0;opacity:0}
+.section4 .word42{position:absolute;left:-33%;top:43%;opacity:0}
+.section4 .word43{position:absolute;right:-33%;top:51%;opacity:0}
+.section4 .word44{position:absolute;left:-33%;top:59%;opacity:0}
+.section4 .word45{position:absolute;right:-33%;top:67%;opacity:0}
+.section4 .word46{position:absolute;left:-33%;top:75%;opacity:0}
+.section5 .word5{position:absolute;left:10%;top:20%;opacity:0}
+.section5 .word511{position:absolute;left:50%;top:18%;opacity:0}
+.section6 .word6{position:absolute;left:50%;top:12%;opacity:0}
+.section6 .word61{position:absolute;left:11%;top:0%;opacity:0}
+.section7 .word71{position:absolute;left:20%;top:0%;opacity:0}
+.section7 .word711{position:absolute;left:50%;top:12%;opacity:0}
+.section7 .word72{position:absolute;left:50%;bottom:20%;opacity:0}
+.section7 .word73{position:absolute;left:50%;bottom:18%;opacity:0}
+.section7 .word74{position:absolute;left:50%;bottom:16%;opacity:0}
+.section7 .word75{position:absolute;left:50%;bottom:14%;opacity:0}
+.section8 .word8{position:absolute;left:15%;top:0%;opacity:0}
+.section8 a{display:inline-block}
+.section8 .word82{position:absolute;right:15%;bottom:6%;}
+.section8 .word81{position:absolute;left:7%;bottom:6%;}
+/*.section5 .word51{position:absolute;left:35%;top:45%;/*height:60px;line-height:60px;background:url(images/choose.png) no-repeat;background-position:0 0;background-size:3.7rem;padding-left:4rem;overflow:hidden}
+
+.section5 .word551{position:absolute;left:35%;top:50%}
+.section5 .word552{position:absolute;left:35%;top:55%}
+.section5 .word553{position:absolute;left:35%;top:60%}
+.section5 .word554{position:absolute;left:35%;top:65%}
+.section5 .word555{position:absolute;left:35%;top:70%}*/
+.section5 .word52{position:absolute;left:23%;bottom:8%;z-index:1;opacity:0}
+.section5 .word53{position:absolute;left:8%;bottom:20%;display:none}
+.color {
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-size: 40px;
+    margin-left: -50%;
+
+}
+.test_t{width: 100%;z-index:999;
+    line-height: 1.5rem;
+    height: 1.5rem;}
+.section5 .test{width: 100%;z-index:999;
+    line-height: 3.3rem;
+    height: 3.3rem;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-size: 40px;overflow:hidden;overflow:hidden;text-align:left;padding-left:30%;overflow:hidden;opacity:0}
+.section5 .test img{width:3rem;height:3rem;vertical-align:middle;margin-right:3px}
+.star{position:absolute;top:19%;left:57%;animation:star 2s infinite ease-in-out;-moz-animation:star 2s infinite ease-in-out;-webkit-animation:star 2s infinite ease-in-out;opacity:1}
+@keyframes star{
+	0%{opacity:0.1}
+	50%{opacity:1}
+	100%{opacity:0.1}	
+}
+@-webkit-keyframes star{
+	0%{opacity:0.1}
+	50%{opacity:1}
+	100%{opacity:0.1}	
+		
+}
+.angel{position:absolute;top:23%;left:20%;animation:sx 2s infinite;-moz-animation:sx 2s infinite;-webkit-animation:sx 2s infinite;}
+@keyframes sx{
+	0%{top:25%}
+	50%{top:23%}
+	100%{top:25%}
+}
+@-webkit-keyframes sx{
+	0%{top:25%}
+	50%{top:23%}
+	100%{top:25%}	
+}
+.handL{position:absolute;left:-40%;top:36%;}
+.handR{position:absolute;right:-40%;top:36%;}
+
+.toy1{position:absolute;left:15%;top:8%;animation:toy1 3s infinite ease-in-out;-webkit-animation:toy1 3s infinite ease-in-out}
+@keyframes toy1{
+	0%{top:10%}
+	50%{top:8%}
+	100%{top:10%}	
+}
+@-webkit-keyframes toy1{
+	0%{top:10%}
+	50%{top:8%}
+	100%{top:10%}	
+}
+.toy2{position:absolute;right:18%;top:13%;animation:toy2 3s infinite ease-in-out;-webkit-animation:toy2 3s infinite ease-in-out}
+@keyframes toy2{
+	0%{top:9%}
+	50%{top:13%}
+	100%{top:9%}	
+}
+@-webkit-keyframes toy2{
+	0%{top:9%}
+	50%{top:13%}
+	100%{top:9%}		
+}
+.toy3{position:absolute;left:24%;top:48%;animation:toy3 3s infinite ease-in-out;-webkit-animation:toy3 3s infinite ease-in-out}
+@keyframes toy3{
+	0%{top:43%}
+	50%{top:39%}
+	100%{top:43%}	
+}
+@-webkit-keyframes toy3{
+	0%{top:43%}
+	50%{top:39%}
+	100%{top:43%}		
+}
+.cloud1{position:absolute;left:20%;top:10%;animation:cloud1 3s infinite ease-in-out;-webkit-animation:cloud1 3s infinite ease-in-out}
+@keyframes cloud1{
+	0%{left:16%}
+	50%{left:20%}
+	100%{left:16%}	
+}
+@-webkit-keyframes cloud1{
+	0%{left:16%}
+	50%{left:20%}
+	100%{left:16%}	
+}
+.cloud2{position:absolute;left:50%;top:6%;animation:cloud2 3s infinite ease-in-out;-webkit-animation:cloud2 3s infinite ease-in-out}
+@keyframes cloud2{
+	0%{left:49%}
+	50%{left:50%}
+	100%{left:49%}	
+}
+@-webkit-keyframes cloud2{
+	0%{left:49%}
+	50%{left:54%}
+	100%{left:49%}	
+}
+.cloud3{position:absolute;right:24%;top:12%;animation:cloud3 3s infinite ease-in-out;-webkit-animation:cloud3 3s infinite ease-in-out}
+@keyframes cloud3{
+	0%{right:20%}
+	50%{right:24%}
+	100%{right:20%}	
+}
+@-webkit-keyframes cloud3{
+	0%{right:20%}
+	50%{right:24%}
+	100%{right:20%}	
+}
+
+
+
+</style>
+<script>
+window.onload = function(){
+	function qm_appendStr(obj, html){
+		var oDiv=document.createElement('div');
+		oDiv.innerHTML=html;
+		while(oDiv.childNodes.length){
+			obj.appendChild(oDiv.childNodes[0]);
+		}
+	}
+	function getByClassName(obj, sClass){
+		var aEle = obj.getElementsByTagName('*');
+		var i = 0;
+		var aResult = [];
+		for(i=0;i<aEle.length;i++){
+			if(aEle[i].className == sClass){
+				aResult.push(aEle[i]);
+			}
+		}
+		return aResult;
+	}	
+	var qingmingjie_str = '<div class="qmg_leaf_div">'+
+			'<div class="qmg_leaf_all">'+
+			'<div class="qmg_leaf1"><img src="images/leaf_03.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf2"><img src="images/leaf_07.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf3"><img src="images/leaf_10.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf4"><img src="images/leaf_15.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf6"><img src="images/leaf_18.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf7"><img src="images/leaf_22.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf8"><img src="images/leaf_26.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf9"><img src="images/leaf_30.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf10"><img src="images/leaf_03.png" style="width:120%"></div>'+
+			'<div class="qmg_leaf11"><img src="images/leaf_03.png" style="width:120%"></div>'+
+			'</div>'+
+		'</div>';
+	qm_appendStr(document.getElementsByTagName('body')[0],qingmingjie_str);
+	var qmgLeaf7 = getByClassName('qmg_leaf7')[0],
+		qmgLeaf8 = getByClassName('qmg_leaf8')[0],
+		qmgLeaf9 = getByClassName('qmg_leaf9')[0],
+		qmgLeaf10 = getByClassName('qmg_leaf10')[0],
+		qmgLeaf11 = getByClassName('qmg_leaf11')[0];
+	/*ie leaf*/
+	if(T.browser.ie){
+		function bezier(curve, rate){
+			if (!curve || !curve.length) return [];
+			if (curve.length == 1) return [curve[0][0], curve[0][1]];
+			if (curve.length == 2) return [
+				curve[0][0] + (curve[1][0] - curve[0][0]) * rate,
+				curve[0][1] + (curve[1][1] - curve[0][1]) * rate
+			];
+			var temp = [];
+			for (var i = 1; i < curve.length; i++){
+				temp.push(bezier([curve[i - 1], curve[i]], rate));
+			}
+			return bezier(temp, rate);
+		}
+		function rand_pm(obj,xy,rote){
+			var pos = bezier(xy,rote);
+				obj.style.right = parseInt(pos[0])  + 'px';
+				obj.style.top = parseInt(pos[1])  + 'px';
+		}
+		setInterval(function(){
+			rand_pm(qmgLeaf7,[[0,0],[150,92],[133,388],[416,380]],(+new Date) % 7000 / 7000);
+			rand_pm(qmgLeaf8,[[1,37],[296,27],[84,154],[537,107]],(+new Date) % 4000 / 4000);
+			rand_pm(qmgLeaf9,[[150,10],[296,27],[83,345],[562,292]],(+new Date) % 6000 / 6000);
+			rand_pm(qmgLeaf10,[[150,10],[296,27],[83,345],[276,340]],(+new Date) % 5000 / 5000);
+			rand_pm(qmgLeaf11,[[248,10],[462,142],[83,345],[459,251]],(+new Date) % 7000 / 7000);
+		}, 30);
+	}
+}
+</script>
+</head>
+
+
+<body>
+<div class=" head" style="z-index:999; position:absolute; right:70px; top:90px;">
+    <div class="info" >
+        <audio src="mp3/bg.mp3" autoplay="autoplay" loop>您的浏览器不支持 audio标签。</audio>
+        <img width="80" height="80" class="music on" src="images/on.png" />
+    </div>
+</div>
+<div  id="dowebok">
+    <div class="section section1">
+    	<p class="logo" style="z-index:999;"><img src="images/logo_03.png" style=" position:absolute; left:70px; top:90px;width:15%"/></p>
+    	<p class="word1"><img src="images/word_03.png" style="width:35%"></p>
+        <p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+    </div>
+	<div class="section section2">
+    	<p class="girl"><img src="images/girl.gif" style="width:50%;margin-top:-10%"/></p>
+        <p class="word2 color">小时候，我爱吃糖果</p>
+    	<p class="word-2 color">所以长大后我想开个糖果店 …</p>
+    	<p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+    </div>
+	<div class="section section3">
+    	<p class="toy1"><img src="images/1.png" style="width:120%"/></p>
+        <p class="toy3"><img src="images/2.png" style="width:120%"/></p>
+        <p class="toy2"><img src="images/3.png" style="width:120%"/></p>
+    	<p class="word3 color">小时候，你喜欢玩具</p>
+        <p class="word-3 color">因为你认为在玩具堆是最幸福的事儿…</p>
+    	<p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+    </div>
+	<div class="section section4">
+    	<p class="word41"><img src="images/word_23.png" style="width:120%"/></p>
+        <p class="word42"><img src="images/word_27.png" style="width:120%"/></p>
+        <p class="word43"><img src="images/word_29.png" style="width:120%"/></p>
+        <p class="word44"><img src="images/word_30.png" style="width:120%"/></p>
+        <p class="word45"><img src="images/word_31.png" style="width:120%"/></p>
+        <p class="word46"><img src="images/word_32.png" style="width:120%"/></p>
+        <p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+    </div>
+    
+    <div class="section section5">
+    	<p class="word5"><img src="images/w4_01.png" style="width:120%"/></p>
+        <p class="word511 color">如果是你,你会开一个什么样的店？</p>
+        <p class="cloud1"><img src="images/yun1.jpg" style="width:120%"/></p>
+        <!--<p class="cloud2"><img src="images/yun2.jpg" style="width:120%"/></p>-->
+        <p class="cloud3"><img src="images/yun3.jpg" style="width:120%"/></p>
+        <p class="test"></p>
+        <p class="test"></p>
+        <!--<p class="test"></p>-->
+        <p class="test_t"></p>
+        <p class="test" stype="1"><img class="test1" src="images/aaa_01.png"/>有情调的文艺店</p>
+        <p class="test" stype="2"><img class="test2" src="images/aa_02.png"/>粉粉的萌物店</p>
+        <p class="test" stype="3"><img class="test3" src="images/aa_03.png"/>独爱的动漫店</p>
+        <p class="test" stype="4"><img class="test4" src="images/aa_04.png"/>爱美的韩妆店</p>
+        <p class="test" stype="5"><img class="test5" src="images/aa_05.png"/>狂热的数码店</p>
+        <p class="test" stype="6"><img class="test6" src="images/aa_06.png"/>其他某某某</p>
+        
+        <p class="word52"><img src="images/a_07.png" style="width:120%"/></p>
+        <p class="word53"><img src="images/b_08.png" style="width:130%"/></p>
+        <p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+    </div>
+    
+	<div class="section section6">
+    	<p class="word61"><img src="images/w6_02.png" style="width:120%"/></p>
+        <p class="word6 color">其实兴趣可以让事业更理直气壮</p>        
+        <p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+    </div>
+	<div class="section section7">
+    	<p class="word71"><img src="images/w5_01.png" style="width:120%"/></p>
+        <p class="word711 color">只是我们每天想的太多做的太少</p>
+        <p class="word72 color">悦店陪你一起开自己喜欢的店</p>
+        <p class="word73 color">过自己喜欢的生活</p>
+        <p class="word74 color">让你站在离梦想最近的地方</p>
+        <p class="word75 color">体验梦想与获利的乐趣</p>
+        <p class="star"><img src="images/star.gif" style="width:125%"/></p>
+        <p class="angel"><img src="images/angel_07.png" style="width:125%"/></p>
+        <p class="arrow"><img src="images/arrow_07.png" style="width:8%"></p>
+        
+    </div>
+	<div class="section section8">
+    	<p class="word8"><img src="images/word_55.png" style="width:120%"/></p>
+        <p class="word81"><a href=""><img src="images/word_59.png" style="width:120%"/></a></p>
+        <p class="word82"><a href=""><img src="images/word_60.png" style="width:120%"/></a></p>
+        <p class="handL"><img src="images/hands_02.png" style="width:120%"/></p>
+        <p class="handR"><img src="images/hands_03.png" style="width:120%"/></p>
+        <p class="shadow"></p>
+        
+    </div>
+</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({		
+		scrollOverflow:true,
+		afterLoad: function(anchorLink, index){
+			if(index==1)
+			{
+				$('.section1').find('.word1').delay(30).animate({
+					left:'35%',opacity:'1'
+				}, 2000, 'easeOutExpo');
+			}
+			else if(index == '2'){
+				$('.section2').find('.word2').delay(30).animate({
+					bottom: '19%',opacity:'1'
+				}, 2000, 'easeOutExpo');
+				$('.section2').find('.word-2').delay(1000).animate({
+					bottom: '15%',opacity:'1'
+				}, 2000, 'easeOutExpo');
+			}
+			else if(index == '3'){
+				$('.section3').find('.word3').delay(30).animate({
+					bottom: '19%',opacity:'1'
+				}, 2000, 'easeOutExpo');
+				$('.section3').find('.word-3').delay(1000).animate({
+					bottom: '15%',opacity:'1'
+				}, 2000, 'easeOutExpo');
+			}
+			else if(index == '4')
+			{
+				$('.section4').find('.word41').delay(30).animate({
+					top:'2%',opacity:'1'	
+				},2000,'easeOutExpo');	
+				$('.section4').find('.word42').delay(600).animate({
+					left:'12%',opacity:'1'	
+				},5000,'easeOutExpo');
+				$('.section4').find('.word43').delay(2000).animate({
+					right:'26%',opacity:'1'	
+				},5000,'easeOutExpo');
+				$('.section4').find('.word44').delay(4000).animate({
+					left:'12%',opacity:'1'	
+				},5000,'easeOutExpo');
+				$('.section4').find('.word45').delay(6000).animate({
+					right:'26%',opacity:'1'	
+				},5000,'easeOutExpo');
+				$('.section4').find('.word46').delay(8000).animate({
+					left:'12%',opacity:'1'	
+				},5000,'easeOutExpo');
+			}
+			else if(index=='5')
+			{
+				$('.section5').find('.word5').delay(30).animate({
+					top:'23%',opacity:'1'	
+				},2000,'easeOutExpo');	
+				$('.section5').find('.word511').delay(1500).animate({
+					top:'30%',opacity:'1'	
+				},2000,'easeOutExpo');
+				$('.section5').find('.test').delay(3500).animate({
+					opacity:'1'	
+				},2000,'easeOutExpo');
+				$('.section5').find('.word52').delay(6000).animate({
+					opacity:'1'	
+				},2000,'easeOutExpo');
+			}
+			else if(index=='6')
+			{
+				$('.section6').find('.word61').delay(30).animate({
+					top:'7%',opacity:'1'	
+				},2000,'easeOutExpo');	
+				$('.section6').find('.word6').delay(2000).animate({
+					top:'15%',opacity:'1'	
+				},3000,'easeOutExpo');	
+			}
+			else if(index=='7')
+			{
+				$('.section7').find('.word71').delay(30).animate({
+					top:'5%',opacity:'1'	
+				},2000,'easeOutExpo');	
+				$('.section7').find('.word711').delay(2000).animate({
+					top:'13%',opacity:'1'	
+				},2000,'easeOutExpo');	
+				$('.section7').find('.word72').delay(3000).animate({
+					bottom:'24%',opacity:'1'	
+				},2000,'easeOutExpo');	
+				$('.section7').find('.word73').delay(4000).animate({
+					bottom:'20%',opacity:'1'	
+				},2000,'easeOutExpo');
+				$('.section7').find('.word74').delay(5000).animate({
+					bottom:'16%',opacity:'1'	
+				},2000,'easeOutExpo');
+				$('.section7').find('.word75').delay(6000).animate({
+					bottom:'12%',opacity:'1'	
+				},2000,'easeOutExpo');
+			}
+			else if(index=='8')
+			{
+				$('.section8').find('.word8').delay(30).animate({
+					top:'3%',opacity:'1'	
+				},2000,'easeOutExpo');
+				$('.section8').find('.handL').delay(30).animate({
+					left:'0%'
+				},4000,'easeOutExpo');	
+				$('.section8').find('.handR').delay(30).animate({
+					right:'9%'
+				},4000,'easeOutExpo');	
+			}
+			
+		},
+		onLeave: function(index, direction){
+			if(index==1)
+			{
+				$('.section1').find('.word1').delay(30).animate({
+					left:'35%',opacity:'0'
+				}, 1000, 'easeOutExpo');
+			}
+			else if(index == '2'){
+				$('.section2').find('.word2').delay(30).animate({
+					bottom: '12%',opacity:'0'
+				}, 1000, 'easeOutExpo');
+				$('.section2').find('.word-2').delay(30).animate({
+					bottom: '10%',opacity:'0'
+				}, 1000, 'easeOutExpo');
+			}
+			else if(index == '3'){
+				$('.section3').find('.word3').delay(30).animate({
+					bottom: '12%',opacity:'0'
+				}, 1000, 'easeOutExpo');
+				$('.section3').find('.word-3').delay(30).animate({
+					bottom: '10%',opacity:'0'
+				}, 1000, 'easeOutExpo');
+			}
+			else if(index == '4')
+			{
+				$('.section4').find('.word41').delay(30).animate({
+					top:'-10%',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section4').find('.word42').delay(30).animate({
+					left:'-30%',opacity:'0'	
+				},1000,'easeOutExpo');	
+				$('.section4').find('.word43').delay(30).animate({
+					right:'-30%',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section4').find('.word44').delay(30).animate({
+					left:'-30%',opacity:'0'	
+				},1000,'easeOutExpo');	
+				$('.section4').find('.word45').delay(30).animate({
+					right:'-30%',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section4').find('.word46').delay(30).animate({
+					left:'-30%',opacity:'0'	
+				},1000,'easeOutExpo');
+			}
+			else if(index=='5')
+			{
+				$('.section5').find('.word5').delay(30).animate({
+					top:'18%',opacity:'0'	
+				},1000,'easeOutExpo');	
+				$('.section5').find('.word511').delay(30).animate({
+					top:'30%',opacity:'0'	
+				},1000,'easeOutExpo');
+			}
+			else if(index=='6')
+			{
+				$('.section6').find('.word6').delay(30).animate({
+					top:'10%',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section6').find('.word61').delay(30).animate({
+					top:'0',opacity:'0'	
+				},1000,'easeOutExpo');
+			}
+			else if(index=='7')
+			{
+				$('.section7').find('.word71').delay(30).animate({
+					top:'0',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section7').find('.word711').delay(30).animate({
+					top:'10%',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section7').find('.word72').delay(30).animate({
+					bottom:'0',opacity:'0'	
+				},1000,'easeOutExpo');	
+				$('.section7').find('.word73').delay(30).animate({
+					bottom:'0',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section7').find('.word74').delay(30).animate({
+					bottom:'0',opacity:'0'	
+				},1000,'easeOutExpo');
+				$('.section7').find('.word75').delay(30).animate({
+					bottom:'0',opacity:'0'	
+				},1000,'easeOutExpo');	
+			}
+			else if(index=='8')
+			{
+				$('.section8').find('.word8').delay(30).animate({
+					top:'0',opacity:'0'	
+				},1000,'easeOutExpo');	
+				$('.section8').find('.handL').delay(30).animate({
+					left:'-40%'
+				},1000,'easeOutExpo');
+				$('.section8').find('.handR').delay(30).animate({
+					right:'-40%'	
+				},1000,'easeOutExpo');
+			}
+		}
+	});
+	
+	
+
+	$(".test").click(function(){
+		$(".test1").attr("src","images/aa_01.png");
+		$(".test2").attr("src","images/aa_02.png");
+		$(".test3").attr("src","images/aa_03.png");
+		$(".test4").attr("src","images/aa_04.png");
+		$(".test5").attr("src","images/aa_05.png");
+		$(".test6").attr("src","images/aa_06.png");
+		$(this).children("img").attr("src","images/aaa_0"+$(this).attr('stype')+".png");	
+		
+	});
+	
+	$('.section5').find('.word52').click(function(){
+		$(this).css('display','none');	
+		$('.section5').find('.test').css('display','none');
+		$('.section5').find('.word5').css('display','none');
+		$('.section5').find('.word511').css('display','none');
+		$('.section5').find('.word53').css('display','block');
+	});
+	 $('.music').on('click',function(){
+        if($(this).hasClass('on')){
+            $('audio').get(0).pause();
+            $(this).removeClass('on music-off');
+            $(this).attr('src','images/off.png');
+        }else {
+            $('audio').get(0).play();
+            $(this).addClass('on music-off');
+            $(this).attr('src','images/on.png');
+        }  
+    })
+	
+});
+
+</script>
+<script>
+/*function change_pic(a,n){
+	var imgObj = document.getElementById(a+n);
+	var Flag=(imgObj.getAttribute("src")=="images/check_03.png")
+	imgObj.src=Flag?"images/checked_03.png":"images/check_03.png";
+}*/
+
+</script>
+</body>
+</html>
